@@ -254,7 +254,9 @@ abstract class Server extends Nanoserv\HTTP\Server {
         foreach ($this->exports[$method] as $param) {
             $ret .= "<xs:element name=\"{$param['name']}\">\n";
 
-            if ($ptype = $param["type"]) {
+            if(isset($param["type"])) {
+                $ptype = $param["type"];
+                
                 $ret .= "    <xs:simpleType>\n";
                 $ret .= "        <xs:restriction base=\"xs:{$ptype}\" />\n";
                 $ret .= "    </xs:simpleType>\n";
