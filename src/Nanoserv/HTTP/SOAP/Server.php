@@ -29,11 +29,6 @@ namespace Nanoserv\HTTP\SOAP;
 use Nanoserv;
 
 /**
- * Require the HTTP server
- */
-require_once 'nanoserv/handlers/HTTP/Server.php';
-
-/**
  * SOAP 1.1 over HTTP Service handler class
  *
  * @package nanoserv
@@ -73,7 +68,7 @@ abstract class Server extends Nanoserv\HTTP\Server {
      * @param array $options
      */
     public function __construct($options) {
-        if (isset($options["hostname"])) {
+        if (is_array($options) && isset($options["hostname"])) {
             $this->hostname = $options["hostname"];
         }
 
@@ -252,7 +247,6 @@ abstract class Server extends Nanoserv\HTTP\Server {
         $ret .= "       <xs:sequence>\n";
 
         foreach ($this->exports[$method] as $param) $ret .= "           <xs:element ref=\"{$param['name']}\"/>\n";
-
         $ret .= "       </xs:sequence>\n";
         $ret .= "      </xs:complexType>\n";
         $ret .= "</xs:element>\n\n";
