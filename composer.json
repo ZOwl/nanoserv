@@ -1,12 +1,16 @@
 {
-    "name": "kenshaw/nanoserv",
+    "name": "sergiu-paraschiv/nanoserv",
     "minimum-stability": "dev",
     "description": "Sockets based server for PHP",
     "keywords": ["nanoserv", "socket"],
-    "homepage": "https://github.com/kenshaw/nanoserv",
+    "homepage": "https://github.com/sergiu-paraschiv/nanoserv",
     "type": "library",
     "license": "LGPL-2.1",
     "authors": [
+        {
+            "name": "Sergiu Paraschiv",
+            "email": "sergiuspk@gmail.com"
+        },
         {
             "name": "Kenneth Shaw",
             "email": "kenshaw@gmail.com"
