@@ -1,12 +1,16 @@
 {
-    "name": "sergiu-paraschiv/nanoserv",
+    "name": "ZOwl/nanoserv",
     "minimum-stability": "dev",
     "description": "Sockets based server for PHP",
     "keywords": ["nanoserv", "socket"],
-    "homepage": "https://github.com/sergiu-paraschiv/nanoserv",
+    "homepage": "https://github.com/ZOwl/nanoserv",
     "type": "library",
     "license": "LGPL-2.1",
     "authors": [
+        {
+            "name": "ZOwl",
+            "email": "zhhbug@gmail.com"
+        },
         {
             "name": "Sergiu Paraschiv",
             "email": "sergiuspk@gmail.com"
