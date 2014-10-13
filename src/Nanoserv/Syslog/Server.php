@@ -26,7 +26,7 @@
 
 namespace Nanoserv\Syslog;
 
-use Nanoserv\DatagramHandler
+use Nanoserv\DatagramHandler;
 
 /**
  * Syslog protocol handler handler class
